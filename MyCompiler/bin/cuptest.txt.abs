@@ -1,0 +1,9 @@
+OpExp(
+ EQ,
+ varExp(
+  SimpleVar(a)),
+ OpExp(
+  DIV,
+  varExp(
+   SimpleVar(a)),
+  IntExp(3)))
