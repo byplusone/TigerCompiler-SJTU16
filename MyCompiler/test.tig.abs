@@ -1,0 +1,18 @@
+LetExp(
+ DecList(
+  VarDec(a,
+   IntExp(1),
+   true),
+  DecList(
+   VarDec(b,
+    IntExp(2),
+    true),
+   DecList())),
+ SeqExp(
+  ExpList(
+   OpExp(
+    PLUS,
+    varExp(
+     SimpleVar(a)),
+    varExp(
+     SimpleVar(b))))))

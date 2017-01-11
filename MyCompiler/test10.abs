@@ -1,0 +1,11 @@
+WhileExp(
+ SeqExp(
+  ExpList(
+   OpExp(
+    GT,
+    IntExp(10),
+    IntExp(5)))),
+ OpExp(
+  PLUS,
+  IntExp(5),
+  IntExp(6)))

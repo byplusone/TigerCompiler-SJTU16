@@ -1,0 +1,36 @@
+LetExp(
+ DecList(
+  TypeDec(rectype,
+   RecordTy(
+    Fieldlist(
+     name
+     string,
+     true,
+     Fieldlist(
+      age
+      int,
+      true,
+      Fieldlist())))),
+  DecList(
+   VarDec(rec1,
+    rectype,
+    RecordExp(rectype,
+     FieldExpList(
+name,
+      StringExp(Nobody),
+      FieldExpList(
+age,
+       IntExp(1000),
+       FieldExpList()))),
+    true),
+   DecList())),
+ SeqExp(
+  ExpList(
+   AssignExp(
+    FieldVar(
+     SimpleVar(rec1),
+     name),
+    StringExp(Somebody)),
+   ExpList(
+    varExp(
+     SimpleVar(rec1))))))

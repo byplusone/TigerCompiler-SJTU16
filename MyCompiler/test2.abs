@@ -1,0 +1,17 @@
+LetExp(
+ DecList(
+  TypeDec(myint,
+   NameTy(int),TypeDec(arrtype,
+    ArrayTy(myint))),
+  DecList(
+   VarDec(arr1,
+    arrtype,
+    ArrayExp(arrtype,
+     IntExp(10),
+     IntExp(0)),
+    true),
+   DecList())),
+ SeqExp(
+  ExpList(
+   varExp(
+    SimpleVar(arr1)))))

@@ -1,0 +1,43 @@
+LetExp(
+ DecList(
+  TypeDec(arrtype,
+   ArrayTy(int),TypeDec(rectype,
+    RecordTy(
+     Fieldlist(
+      name
+      string,
+      true,
+      Fieldlist(
+       id
+       int,
+       true,
+       Fieldlist()))))),
+  DecList(
+   VarDec(rec,
+    RecordExp(rectype,
+     FieldExpList(
+name,
+      StringExp(aname),
+      FieldExpList(
+id,
+       IntExp(0),
+       FieldExpList()))),
+    true),
+   DecList(
+    VarDec(arr,
+     ArrayExp(arrtype,
+      IntExp(3),
+      IntExp(0)),
+     true),
+    DecList()))),
+ SeqExp(
+  ExpList(
+   IfExp(
+    OpExp(
+     NE,
+     varExp(
+      SimpleVar(rec)),
+     varExp(
+      SimpleVar(arr))),
+    IntExp(3),
+    IntExp(4)))))

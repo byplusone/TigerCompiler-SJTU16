@@ -1,0 +1,13 @@
+ForExp(
+ VarDec(i,
+  int,
+  IntExp(10),
+  true),
+ StringExp( ),
+ AssignExp(
+  SimpleVar(i),
+  OpExp(
+   MINUS,
+   varExp(
+    SimpleVar(i)),
+   IntExp(1))))
